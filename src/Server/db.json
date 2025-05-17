@@ -1,0 +1,33 @@
+{
+   "products":[
+    {
+         "name":"APPLE",
+         "desc":"APPLE IS A SUPER FAST PHONE",
+         "price":"4000000"
+
+
+    },
+    {
+        "name":"Samsung",
+        "desc":"Samsung IS A SUPER FAST PHONE",
+        "price":"4000000"
+
+    },
+    {
+        "name":"lenovo ",
+        "desc":"lenovo IS A SUPER FAST PHONE",
+        "price":"4000000"
+
+    },
+    {
+        "name":"acer",
+        "desc":"acer IS A SUPER FAST PHONE",
+        "price":"4000000"
+
+    }
+
+
+
+   ]
+
+}

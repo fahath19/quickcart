@@ -1,0 +1,163 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+li{
+    font-size: 1.2rem;
+    padding-right: 3.5rem;
+
+    cursor: pointer;       
+}
+.subheader li:hover{
+  color: red;
+}
+body {
+     background-color: white;
+}
+
+
+@layer components{
+    li{
+      @apply md:text-white text-white p-4 md:p-0  md:pr-[3.5rem] text-[1.3rem] cursor-pointer;   
+    }
+    /* .userinput:hover { */
+      /* @apply w-[200px] */
+    /* } */
+    .desktopsubheader:hover {
+            color: blue;
+
+    }
+
+    .brandimg{
+      @apply    md:w-[200px]  md:border-r-2 md:border border md:border-l-0
+    }
+    .brandimg img{
+      @apply  md:w-[150px] w-[130px] px-4 md:p-3 p-2 h-[90px] object-fill mx-auto 
+    }
+    .brandimg:last-child{
+      @apply  md:border-r-0  
+    }
+      .customercont{
+        @apply ml-4 mt-3
+      }
+    .customerimg{
+      @apply w-[50px] h-[50px] mx-auto
+    }
+    .customerimg img{
+      @apply w-[100%] h-[100%]
+    }
+    .customercont h2{
+      @apply mt-4 font-bold
+    }
+    .customercont p{
+      @apply mt-4 text-[14px] text-[#7d7c7c]
+    }
+    .catcont:hover .catimg img{
+      @apply scale-[1.1] transition-all delay-75	 duration-100	
+           
+    }
+    .catimg{
+
+    }
+    .shoebanner:hover img,     .laptopbanner:hover img,    .watchbanner:hover img ,    .clothbanner:hover img{
+      @apply scale-[0.9] transition-all delay-75	
+
+    
+    
+    }
+    .footer{
+     @apply pb-4 
+    }
+    .footcont{
+      @apply  mr-8
+    }
+    .footcont li{
+      @apply text-[1.1rem] mt-1 text-[#e0dfdf] capitalize
+
+    }
+    .footcont .heading{
+            @apply text-[1.6rem] uppercase text-white
+    }
+    .desktopsubheader li{
+    @apply mt-[0.8rem]
+
+    }
+
+    .active{
+      @apply inline-block
+    }
+    .unactive{
+      @apply hidden
+    }
+    .slider{
+      @apply mt-6 relative 
+    }
+    .left{
+      @apply absolute text-white top-40  px-4 text-[2rem]
+    }
+    .left:hover{
+      @apply text-[red]
+    }
+    .right{
+      @apply absolute text-white top-40  right-0 px-4 text-[2rem]
+    }
+    .right:hover{
+      @apply text-[red]
+    }
+
+    .productcont:hover .productimg{
+@apply scale-[1.1] transition-all delay-75	
+    }
+
+    .sideproductimg{
+      @apply md:w-[80px] md:h-[80px] w-[50px] h-[50px] border-2 px-1 pt-2  mb-4 cursor-pointer
+    }
+    .sideproductimg:hover{
+      @apply  border-2 border-black
+    }
+    .userreviewcont{
+      @apply w-[100%]
+       
+    }
+    .review{
+
+      @apply mt-5 
+    }
+    .review li{
+    @apply text-black  mr-0  md:mr-8 text-[1rem]  pr-[10px] md:pr-[auto] md:w-[auto]
+
+    }
+    .review li:hover{
+      @apply border-b-2 border-blue-500  
+    }
+
+    .user{
+      @apply border-b-2 pb-2  w-[80%]
+    }
+    .user h2{
+            @apply mt-2    capitalize
+          }
+    p{
+      @apply mt-2    
+          
+    }
+    .date{
+      @apply mt-1
+    }
+    .p{
+      @apply mt-2    
+
+    }
+ 
+  .calendar h2{
+    @apply md:mr-5 md:mt-auto mt-2 mr-3 border-2 p-2 font-semibold md:text-[0.8rem] text-[0.7rem] rounded-[11px] 
+
+  }
+  .recentordtitle h2{
+    @apply  md:text-[1.1rem] text-[0.8rem]  mr-4 font-bold 
+
+  }
+  .recentordinfo h2{
+    @apply  text-[0.9rem]  font-bold  mr-2 text-[#848884]
+  }
+}
